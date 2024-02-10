@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 // GET - / - returns homepage
 app.get('/', (req, res) => {
     // serve up the public folder as static index.html file
-
+    res.sendFile(path.join(__dirname, 'public', 'index.html'))
 });
 
 // hello world route
